@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Tracker | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headerBar">
+        <header>
+            <h1 class="title">My Budget Tracker</h1>
+            <header>
+    </div>
+    <div class="content">
+        <h3 >Add a new transacion: </h3>
+        <div class="form">
+            <form id="expForm">
+                    Type:<select id="type">
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select><br>
+            Name:<input type="text" id="name"><br>
+                     Amount:<input type="text" id="amount"><br>
+                <button type="submit" class="buttonSave">Add to transactions</button>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable"></tbody>
+        </table>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
